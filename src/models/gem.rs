@@ -5,10 +5,10 @@ use serde::{Deserialize, Serialize};
 #[serde(rename_all = "lowercase")]
 pub enum Gem {
     Onyx, //black
-    Sapphire,
-    Emerald,
-    Ruby,
-    Diamond,
+    Sapphire, //blue
+    Emerald, //green
+    Ruby, //red
+    Diamond, //white
 }
 
 /// Token types including Gold (wildcard)
