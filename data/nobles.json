@@ -1,0 +1,12 @@
+[
+  {"id": 1, "points": 3, "requirements": {"onyx": 4, "ruby": 4}},
+  {"id": 2, "points": 3, "requirements": {"sapphire": 4, "emerald": 4}},
+  {"id": 3, "points": 3, "requirements": {"emerald": 4, "ruby": 4}},
+  {"id": 4, "points": 3, "requirements": {"onyx": 4, "diamond": 4}},
+  {"id": 5, "points": 3, "requirements": {"sapphire": 4, "diamond": 4}},
+  {"id": 6, "points": 3, "requirements": {"onyx": 3, "sapphire": 3, "diamond": 3}},
+  {"id": 7, "points": 3, "requirements": {"onyx": 3, "ruby": 3, "emerald": 3}},
+  {"id": 8, "points": 3, "requirements": {"sapphire": 3, "emerald": 3, "ruby": 3}},
+  {"id": 9, "points": 3, "requirements": {"emerald": 3, "ruby": 3, "diamond": 3}},
+  {"id": 10, "points": 3, "requirements": {"onyx": 3, "sapphire": 3, "ruby": 3}}
+]
