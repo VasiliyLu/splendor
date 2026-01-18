@@ -36,6 +36,15 @@ impl CardRecognizer {
         cards
     }
 
+    pub fn process_crop(&self, bbox: BoundingBox, crop: &image::DynamicImage) -> DetectedCard {
+        let (card, confidence) = self.run_card_classification(crop);
+        DetectedCard {
+            card,
+            confidence,
+            bbox,
+        }
+    }
+
     fn run_yolo_detection(&self, _img: &image::DynamicImage) -> Vec<(BoundingBox, image::DynamicImage)> {
         vec![
             (

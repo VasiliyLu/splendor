@@ -36,6 +36,16 @@ impl TokenRecognizer {
         stacks
     }
 
+    pub fn process_crop(&self, bbox: BoundingBox, crop: &image::DynamicImage) -> DetectedStack {
+        let (token_type, count, confidence) = self.run_stack_regression(crop);
+        DetectedStack {
+            token_type,
+            count,
+            confidence,
+            bbox,
+        }
+    }
+
     fn run_yolo_detection(&self, _img: &image::DynamicImage) -> Vec<(BoundingBox, image::DynamicImage)> {
         vec![
             (
